@@ -3,11 +3,16 @@
   <span class="description">{{ card.description }}</span>
 </div>
 
-<div class="card" ng-show="edit">
+<div class="card" ng-show="edit" ng-model-option="modelOptions">
   <div class="flex">
     <label><strong>Title:</strong></label>
-    <input type="text" ng-model="card.title">
+    <input type="text"
+          ng-model="card.title"
+          ng-change="update()">
   </div>
-  <textarea ng-model="card.description" placeholder="Enter description.."></textarea>
+  <textarea ng-model="card.description"
+            ng-change="update()"
+            placeholder="Enter description.."></textarea>
+
   <button ng-click="edit=false">Close</button>
 </div>
