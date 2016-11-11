@@ -61,3 +61,7 @@ ul {
   width: 100%;
   resize: vertical;
 }
+
+.logout {
+  float: right;
+}

@@ -13,6 +13,7 @@
       })
       .when('/login', {
         templateUrl: '/static/html/login.html',
+        controller: 'LoginController'
       })
       .otherwise('/');
   }
