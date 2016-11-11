@@ -1,6 +1,6 @@
 from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_protect
-from django.views.decorators import method_decorator
+from django.utils.decorators import method_decorator
 
 from rest_framework import status, views
 from rest_framework.response import Response
