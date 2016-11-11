@@ -22,6 +22,10 @@
         $scope.data = response.data;
       })
 
+      $scope.login = function() {
+        $http.post('/auth_api/login/',
+          {username: 'test', password: 'chaodibi'});
+      };
     }
 
 }());
