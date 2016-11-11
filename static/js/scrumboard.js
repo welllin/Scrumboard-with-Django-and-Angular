@@ -28,6 +28,10 @@
               $location.url('/login');
             });
       }
+
+      $scope.sortBy = "story_points";
+      $scope.reverse = true;
+      $scope.showFilters = false;
     }
 
 }());
